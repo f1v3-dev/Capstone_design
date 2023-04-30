@@ -1,66 +1,11 @@
-<html lang="ko"><head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSU Classroom Finder</title>
-  <!-- CSS only -->
-  </head><body><nav class="navbar navbar-light bg-light" style="
-  background-color: #3f7fc4;
-">
-      <div class="container-fluid">
-        <a class="navbar-brand" style="
-  color: white;
-  font-size: larger;
-">CSU Classroom Finder</a>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="강의실 검색" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit" style="
-">검색</button>
-        </form>
-      </div>
-    </nav>
-
-
-  
-
-<!-- Code injected by live-server -->
-<script>
-// <![CDATA[  <-- For SVG support
-if ('WebSocket' in window) {
-  (function () {
-    function refreshCSS() {
-      var sheets = [].slice.call(document.getElementsByTagName("link"));
-      var head = document.getElementsByTagName("head")[0];
-      for (var i = 0; i < sheets.length; ++i) {
-        var elem = sheets[i];
-        var parent = elem.parentElement || head;
-        parent.removeChild(elem);
-        var rel = elem.rel;
-        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-        }
-        parent.appendChild(elem);
-      }
-    }
-    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-    var address = protocol + window.location.host + window.location.pathname + '/ws';
-    var socket = new WebSocket(address);
-    socket.onmessage = function (msg) {
-      if (msg.data == 'reload') window.location.reload();
-      else if (msg.data == 'refreshcss') refreshCSS();
-    };
-    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-      console.log('Live reload enabled.');
-      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-    }
-  })();
-}
-else {
-  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-}
-// ]]>
-</script>
-
-
-</body></html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS button 예제</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <button>확인</button>
+  </body>
+</html>
