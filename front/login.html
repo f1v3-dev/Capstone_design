@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
+	<title>Login Page</title>
+	<style>
+        * {
+            font-family: 'Noto Sans Kr', sans-serif;
+        }
+		.container {
+			display: grid;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+			/* background-color: #f2f2f2; */
+		}
+
+		.box {
+			width: 500px;
+			height: 80px;
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+			border-radius: 50px;
+		}
+
+		.box:hover {
+			cursor: pointer;
+			transform: scale(1.05);
+			transition: all 0.2s ease-in-out;
+		}
+
+		.box img {
+            width: 50px;
+            height: 50px;
+            margin: 0 350px -40px 0;
+            float: left;
+		}
+
+		.box p {
+			font-size: 16px;
+			font-weight: bold;
+			margin: 10px;
+		}
+
+		.box.naver {
+			border: 2px solid #f2f2f2;
+		}
+
+		.box.google {
+			border: 2px solid #f2f2f2;
+		}
+
+		.box.kakao {
+			border: 2px solid #f2f2f2;
+		}
+
+		.box.naver:hover {
+			border-color: #1EC800;
+		}
+
+		.box.google:hover {
+			border-color: #DB4437;
+		}
+
+		.box.kakao:hover {
+			border-color: #FFEB00;
+		}
+		.header {
+			/* background-color: ; */
+            padding-top: 75px;
+            margin-left: 50px;
+			text-align: left;
+			
+		}
+
+		/* 스타일 시트를 이용해 네비게이션 바 디자인을 설정합니다. */
+		nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            
+			background-color: white;
+			overflow: hidden;
+            display: flex;
+            /* justify-content: center; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            border-bottom: 3px solid #ccc;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+		}
+		
+		nav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		
+		nav a:hover {
+			color: darkblue;
+		}
+		
+		.home {
+			background-color: #1A3A91;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+		<!-- 네비게이션 바를 만듭니다. -->
+		<nav>
+			<a class="home" href="index.html">CSU MAP</a>
+			<a href="introduce.html">소개 페이지</a>
+			<a href="#notice">공지사항</a>
+			<a href="login.html"> 로그인</a>
+		</nav>
+    <div class="header">
+        <h1>모두의 <br> 조선대학교 <br> 캠퍼스 정복</h1>
+    </div>
+	<div class="container">
+		<div class="box naver" onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id=YOUR_CLIENT_ID&amp;state=STATE_STRING&amp;redirect_uri=YOUR_REDIRECT_URI'">
+			<img src="/img/naver.png" alt="naver logo">
+            <p>네이버 로그인</p>
+		</div>
+		<div class="box google" onclick="location.href='https://accounts.google.com/o/oauth2/auth?response_type=code&amp;client_id=YOUR_CLIENT_ID&amp;state=STATE_STRING&amp;redirect_uri=YOUR_REDIRECT_URI&amp;scope=SCOPE_STRING'">
+			<img src="/img/google.png" alt="google logo">
+			<p>구글 로그인</p>
+		</div>
+		<div class="box kakao" onclick="location.href='https://kauth.kakao.com/oauth/authorize?response_type=code&amp;client_id=YOUR_CLIENT_ID&amp;state=STATE_STRING&amp;redirect_uri=YOUR_REDIRECT_URI'">
+			<img src="/img/kakao.png" alt="kakao logo">
+            <p>카카오 로그인</p>
+        </div>
+    </div>
