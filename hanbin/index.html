@@ -1,11 +1,44 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CSS button 예제</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <button>확인</button>
-  </body>
+<head>
+    <title>CSU MAP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>CSU MAP</h1>
+    <form action="/posts/search" method="GET" class="form-inline p-2 bd-highlight" role="search">
+        <input type="text" name="keyword" class="form-control" id="search" placeholder="검색">
+        <button class="btn btn-success bi bi-search">검색</button>
+        </form>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/posts/save" role="button"
+                       class="btn float-right btn-primary">글 등록</a>
+                       <a href="/login" class="btn float-right btn-light active" style="margin-right: 10px"; role="button">
+                        로그인
+                    </a>
+
+                    <table class="table table-horizontal table-bordered">
+                        <thead class="thead-strong">
+                        <tr>
+                            <th>게시글번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>최종수정일</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--index.js 추가-->
+<script src="main.js"></script>
+</body>
 </html>
