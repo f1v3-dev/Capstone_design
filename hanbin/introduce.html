@@ -1,66 +1,91 @@
-<!DOCTYPE html>          # What's CSU 소개페이지
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR">
-   <title>Introduce Page</title>
-   <style>
+	<title>Introduce Page</title>
+	<style>
         * {
             font-family: 'Noto Sans Kr', sans-serif;
         }
-      .container {
-         display: grid;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         height: 50vh;
-         /* background-color: #f2f2f2; */
-      }
-      .header {
-         /* background-color: ; */
+		.container {
+			display: grid;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+			/* background-color: #f2f2f2; */
+		}
+		.header {
+			/* background-color: ; */
+            padding-top: 75px;
             margin-left: 50px;
-            font-family: 'Noto Sans Kr', sans-serif;
-         color: black;
-         padding: 10px;
-         text-align: left;
-      }
+            text-align: left;
+		}
         .container div {
             color: grey;
         }
 
-    /* 스타일 시트를 이용해 네비게이션 바 디자인을 설정합니다. */
-      nav {
-            margin-top: 30px;
-            
-         background-color: white;
-         overflow: hidden;
-      }
-      
-      nav a {
-         float: left;
-         color: black;
-         text-align: center;
-         padding: 14px 16px;
-         text-decoration: none;
-      }
-      
-      nav a:hover {
-         color: white;
-      }
-      
-      .home {
-         background-color: #4CAF50;
-         color: white;
-      }
-   </style>
+        /* 스타일 시트를 이용해 네비게이션 바 디자인을 설정합니다. */
+		nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+			background-color: white;
+			overflow: hidden;
+            display: flex;
+            /* justify-content: center; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            border-bottom: 3px solid #ccc;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+		}
+
+		nav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+		}
+
+        nav .menu {
+            margin-left: auto;
+        }
+
+		nav a:hover {
+			color: darkblue;
+		}
+
+		.home {
+			background-color: #1A3A91;
+			color: white;
+		}
+
+        /* .header h1 br + span {      # 소개페이지에서 CSU MAP 부분만 파란색으로
+            color: black;
+        } */
+	</style>
 </head>
 <body>
-       <!-- 네비게이션 바를 만듭니다. -->
-   <nav>
-      <a class="home" href="index.html">CSU MAP</a>
-      <a href="#about">소개 페이지</a>
-      <a href="#notice">공지사항</a>
+
+    <!-- 네비게이션 바를 만듭니다. -->
+	<nav>
+		<a class="home" href="index.html">CSU MAP</a>
+		<a href="#about">소개 페이지</a>
+		<a href="#notice">공지사항</a>
         <a href="login.html"> 로그인</a>
-   </nav>
+        <a class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </a>
+	</nav>
     <div class="header">
         <h1>What is <br> CSU MAP? </h1>
     </div>
@@ -75,17 +100,32 @@
             <div>
                 조선대학교 재학생, <br>
                 조선대학교 방문자, <br>
-                누구나 사용 사능
+                누구나 사용 가능
             </div>
             <br> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br>
 
         <h2> Team <br> </h2>
             <div>
                 정승조 이한빈 이연근 <br> 정승민 이담호
-                
-            </div>
 
-        
+            </div>
+            <div>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+                <p> test test test</p>
+
+            </div>        
 
     </div>
-   </div>
+	</div>
